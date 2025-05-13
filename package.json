@@ -1,0 +1,23 @@
+{
+  "name": "fun",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "databaseTest":"node util/database.js"
+  },
+  "author": "leon",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.2",
+    "mysql2": "^3.14.1",
+    "pug": "^3.0.3"
+  }
+}
