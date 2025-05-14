@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "databaseTest":"node util/database.js"
+    "databaseTest": "node util/database.js"
   },
   "author": "leon",
   "license": "ISC",
@@ -18,6 +18,7 @@
     "express": "^5.1.0",
     "express-handlebars": "^8.0.2",
     "mysql2": "^3.14.1",
-    "pug": "^3.0.3"
+    "pug": "^3.0.3",
+    "sequelize": "^6.37.7"
   }
 }

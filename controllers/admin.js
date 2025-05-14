@@ -34,11 +34,9 @@ exports.getEditProduct = (req, res, next) => {
 exports.postAddProduct = (req, res, next) => {
     const { title, imageUrl, price, description } = req.body;
         const product = new Product(null, title, imageUrl, description, price)
-     product.save();
-        console.log("good final");
-      res.redirect('/');
-    
-    
+    product.save().then(() => {
+        res.redirect('/');
+     }).catch((error) => console.log(error));
 }
 exports.getProductsAdmin = (req, res, next) => {
      Product.fetchAll((products) => {
