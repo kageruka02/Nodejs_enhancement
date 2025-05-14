@@ -21,6 +21,13 @@ form {
 .centered{
   text-align: center;
 }
+.image {
+  max-height: 20rem;
+}
+.image img {
+  height: 19rem;
+  object-fit: cover;
+}
 
 .main-header {
   width: 100%;
